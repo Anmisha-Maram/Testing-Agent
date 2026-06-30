@@ -129,14 +129,8 @@ The API returns a structured JSON response containing:
 - and Playwright test code.
 
 ## Screenshots
-
-Add your screenshots in the `images/` folder and reference them here.
-
-Example:
-
 ```md
-
-
+<img width="1335" height="949" alt="image" src="https://github.com/user-attachments/assets/101ca6a7-a287-442d-8368-0bd248c0a018" />
 ```
 
 ## Next Phase
