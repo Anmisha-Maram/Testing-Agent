@@ -1,0 +1,3 @@
+{
+  "story_text": "Story ID: QA-105\nTitle: User should be able to reset password and recover account access\nAcceptance Criteria:\n1. Given the user is on the login page, when the user clicks Forgot Password, then the user should be navigated to the password reset page.\n2. Given the user is on the password reset page, when the user enters a registered email and submits the form, then the user should see a confirmation message that the reset email was sent.\n3. Given the user is on the password reset page, when the user submits an unregistered email, then the user should see an email not found validation message.\nReporter Email: rahul.sharma@example.com"
+}

@@ -1,0 +1,3 @@
+{
+  "story_text": "Story ID: QA-104\nTitle: Logged in user should be able to log out\nAcceptance Criteria:\n1. Given the user is on the dashboard page, when the user clicks Logout, then the user should be navigated to the login page."
+}

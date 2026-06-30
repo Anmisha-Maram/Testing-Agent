@@ -1,0 +1,5 @@
+{
+  "test_name": "password_reset_email_flow_should_work_for_registered_users",
+  "test_code": "import { test, expect } from '@playwright/test';\n\n\ntest('password_reset_email_flow_should_work_for_registered_users', async () => {\n  const page = await browser.newPage();\n  await page.goto('http://localhost:3000');\n  await expect(page).toHaveURL(/.+/);\n  await page.close();\n});\n",
+  "line_count": 9
+}

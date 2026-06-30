@@ -1,0 +1,16 @@
+# Keep this file aligned with the runtime dependencies declared in pyproject.toml.
+# Add new runtime packages here as the agent evolves.
+
+fastapi
+uvicorn
+jinja2
+python-dotenv
+pydantic-settings
+chromadb
+sentence-transformers
+pypdf
+python-docx
+python-multipart
+presidio-analyzer
+presidio-anonymizer
+httpx

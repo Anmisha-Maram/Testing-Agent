@@ -1,0 +1,28 @@
+Story ID: QA-101
+Title: Password reset email flow should work for registered users
+
+User Story:
+As a registered user,
+I want to reset my password using my email address,
+So that I can regain access to my account if I forget my password.
+
+Description:
+The system should allow a registered user to request a password reset link from the login page.
+A reset link should be sent to the registered email address within 2 minutes.
+If the email is not registered, the system should show a generic success message without revealing account existence.
+
+Reporter Details:
+Reporter Name: Rahul Sharma
+Reporter Email: rahul.sharma@example.com
+Reporter Phone: +1 415-555-0199
+
+Acceptance Criteria:
+1. Given the user is on the login page, when the user clicks "Forgot Password", then the user should be navigated to the password reset page.
+2. Given the user enters a registered email address, when the user submits the request, then a reset link should be sent successfully.
+3. Given the user enters an unregistered email address, when the user submits the request, then the system should still display a generic success message.
+4. Given the reset link is used within the valid time window, when the user enters a new valid password, then the password should be updated successfully.
+5. Given the reset link is expired, when the user tries to use it, then the system should show an expiration error.
+
+Notes:
+Test account email: qa.demo.user@example.com
+Backup contact number: 202-555-0147

@@ -1,0 +1,91 @@
+{
+  "original_text": "Story ID: QA-101\nTitle: Password reset email flow should work for registered users\n\nUser Story:\nAs a registered user,\nI want to reset my password using my email address,\nSo that I can regain access to my account if I forget my password.\n\nDescription:\nThe system should allow a registered user to request a password reset link from the login page.\nA reset link should be sent to the registered email address within 2 minutes.\nIf the email is not registered, the system should show a generic success message without revealing account existence.\n\nReporter Details:\nReporter Name: Rahul Sharma\nReporter Email: rahul.sharma@example.com\nReporter Phone: +1 415-555-0199\n\nAcceptance Criteria:\n1. Given the user is on the login page, when the user clicks \"Forgot Password\", then the user should be navigated to the password reset page.\n2. Given the user enters a registered email address, when the user submits the request, then a reset link should be sent successfully.\n3. Given the user enters an unregistered email address, when the user submits the request, then the system should still display a generic success message.\n4. Given the reset link is used within the valid time window, when the user enters a new valid password, then the password should be updated successfully.\n5. Given the reset link is expired, when the user tries to use it, then the system should show an expiration error.\n\nNotes:\nTest account email: qa.demo.user@example.com\nBackup contact number: 202-555-0147",
+  "masked_text": "Story ID: QA-101\nTitle: Password reset email flow should work for registered users\n\nUser Story:\nAs a registered user,\nI want to reset my password using my email address,\nSo that I can regain access to my account if I forget my password.\n\nDescription:\nThe system should allow a registered user to request a password reset link from the login page.\nA reset link should be sent to the registered email address within <DATE_TIME>.\nIf the email is not registered, the system should show a generic success message without revealing account existence.\n\nReporter Details:\nReporter Name: <PERSON>\nReporter <PERSON>: <EMAIL_ADDRESS>\nReporter Phone: <PHONE_NUMBER>\n\nAcceptance Criteria:\n1. Given the user is on the login page, when the user clicks \"Forgot Password\", then the user should be navigated to the password reset page.\n2. Given the user enters a registered email address, when the user submits the request, then a reset link should be sent successfully.\n3. Given the user enters an unregistered email address, when the user submits the request, then the system should still display a generic success message.\n4. Given the reset link is used within the valid time window, when the user enters a new valid password, then the password should be updated successfully.\n5. Given the reset link is expired, when the user tries to use it, then the system should show an expiration error.\n\nNotes:\nTest account email: <EMAIL_ADDRESS>\nBackup contact number: <PHONE_NUMBER>",
+  "entities_detected": [
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 606,
+      "end": 630,
+      "score": 1.0,
+      "text": "rahul.sharma@example.com"
+    },
+    {
+      "entity_type": "UK_NHS",
+      "start": 650,
+      "end": 662,
+      "score": 1.0,
+      "text": "415-555-0199"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 1416,
+      "end": 1440,
+      "score": 1.0,
+      "text": "qa.demo.user@example.com"
+    },
+    {
+      "entity_type": "DATE_TIME",
+      "start": 414,
+      "end": 423,
+      "score": 0.85,
+      "text": "2 minutes"
+    },
+    {
+      "entity_type": "PERSON",
+      "start": 577,
+      "end": 589,
+      "score": 0.85,
+      "text": "Rahul Sharma"
+    },
+    {
+      "entity_type": "PERSON",
+      "start": 599,
+      "end": 604,
+      "score": 0.85,
+      "text": "Email"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "start": 647,
+      "end": 662,
+      "score": 0.75,
+      "text": "+1 415-555-0199"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "start": 1464,
+      "end": 1476,
+      "score": 0.75,
+      "text": "202-555-0147"
+    },
+    {
+      "entity_type": "URL",
+      "start": 606,
+      "end": 614,
+      "score": 0.5,
+      "text": "rahul.sh"
+    },
+    {
+      "entity_type": "URL",
+      "start": 619,
+      "end": 630,
+      "score": 0.5,
+      "text": "example.com"
+    },
+    {
+      "entity_type": "URL",
+      "start": 1416,
+      "end": 1426,
+      "score": 0.5,
+      "text": "qa.demo.us"
+    },
+    {
+      "entity_type": "URL",
+      "start": 1429,
+      "end": 1440,
+      "score": 0.5,
+      "text": "example.com"
+    }
+  ],
+  "entity_count": 12
+}

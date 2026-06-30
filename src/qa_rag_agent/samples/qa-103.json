@@ -1,0 +1,3 @@
+{
+  "story_text": "Story ID: QA-103\nTitle: User should see validation message for missing email during signup\nAcceptance Criteria:\n1. Given the user is on the signup page, when the user clicks Sign Up without entering an email, then the user should see an email required validation message.\nReporter Phone: +1 415-555-0199"
+}

@@ -1,0 +1,39 @@
+{
+  "feature": {
+    "title": "Password reset email flow should work for registered users"
+  },
+  "scenarios": [
+    {
+      "title": "Scenario 1: Given the user is on the login page, when the user clicks \"Forgot Password\", then the user should be navigated to the password reset page.",
+      "given": "the user has a valid password reset request",
+      "when": "the user submits the password reset request",
+      "then": "the system should complete the password reset flow"
+    },
+    {
+      "title": "Scenario 2: Given the user enters a registered email address, when the user submits the request, then a reset link should be sent successfully.",
+      "given": "the system is ready for the workflow",
+      "when": "the user performs the requested action",
+      "then": "the system should complete the expected outcome"
+    },
+    {
+      "title": "Scenario 3: Given the user enters an unregistered email address, when the user submits the request, then the system should still display a generic success message.",
+      "given": "the user is authenticated",
+      "when": "the login action is triggered",
+      "then": "the system should display a welcome message"
+    },
+    {
+      "title": "Scenario 4: Given the reset link is used within the valid time window, when the user enters a new valid password, then the password should be updated successfully.",
+      "given": "the user has a valid password reset request",
+      "when": "the user submits the password reset request",
+      "then": "the system should complete the password reset flow"
+    },
+    {
+      "title": "Scenario 5: Given the reset link is expired, when the user tries to use it, then the system should show an expiration error.",
+      "given": "the system is ready for the workflow",
+      "when": "the user performs the requested action",
+      "then": "the system should complete the expected outcome"
+    }
+  ],
+  "scenario_count": 5,
+  "raw_gherkin_text": "Feature: Password reset email flow should work for registered users\n  As a user\n  I want the described behavior\n  So that the product works as expected\n\n  Scenario: Scenario 1: Given the user is on the login page, when the user clicks \"Forgot Password\", then the user should be navigated to the password reset page.\n    Given the user has a valid password reset request\n    When the user submits the password reset request\n    Then the system should complete the password reset flow\n\n  Scenario: Scenario 2: Given the user enters a registered email address, when the user submits the request, then a reset link should be sent successfully.\n    Given the system is ready for the workflow\n    When the user performs the requested action\n    Then the system should complete the expected outcome\n\n  Scenario: Scenario 3: Given the user enters an unregistered email address, when the user submits the request, then the system should still display a generic success message.\n    Given the user is authenticated\n    When the login action is triggered\n    Then the system should display a welcome message\n\n  Scenario: Scenario 4: Given the reset link is used within the valid time window, when the user enters a new valid password, then the password should be updated successfully.\n    Given the user has a valid password reset request\n    When the user submits the password reset request\n    Then the system should complete the password reset flow\n\n  Scenario: Scenario 5: Given the reset link is expired, when the user tries to use it, then the system should show an expiration error.\n    Given the system is ready for the workflow\n    When the user performs the requested action\n    Then the system should complete the expected outcome\n"
+}
